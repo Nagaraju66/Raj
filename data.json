@@ -1,0 +1,56 @@
+{
+  "data": [
+  {
+    "id":1,
+    "customer_name" : "Nagaraju",
+    "no_items_ordered" : "2",
+    "total_amount" : "450",
+    "order_staus" : "Order received",
+    "order_date" : "19-03-2020",
+    "address" : {
+      "house_num" : "1-25/a",
+      "flat_num" : "301",
+      "land_mark" : "Behind Madhapur PS",
+      "city" : "Hyderabad",
+      "pincode" : "500032",
+      "state" : "Telengana",
+      "country" : "India"
+    }
+  },{
+    "id":2,
+    "customer_name" : "Naga krishna",
+    "no_items_ordered" : "1",
+    "total_amount" : "300",
+    "order_staus" : "Order received",
+    "order_date" : "10-05-2020",
+    "address" : {
+      "house_num" : "1-26/a",
+      "flat_num" : "302",
+      "land_mark" : "Behind Madhapur PS",
+      "city" : "Hyderabad",
+      "pincode" : "500032",
+      "state" : "Telengana",
+      "country" : "India"
+    }
+  }
+  ,{
+    "id":3,
+    "customer_name" : "Rajashekar",
+    "no_items_ordered" : "3",
+    "total_amount" : "600",
+    "order_staus" : "Order received",
+    "order_date" : "10-05-2020",
+    "address" : {
+      "house_num" : "1-27/a",
+      "flat_num" : "303",
+      "land_mark" : "Behind Madhapur PS",
+      "city" : "Hyderabad",
+      "pincode" : "500032",
+      "state" : "Telengana",
+      "country" : "India"
+    }
+  } 
+  
+  
+]
+}
