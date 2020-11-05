@@ -1,0 +1,50 @@
+<div class="container" *ngFor="let order of orderDetail">
+	<h6>Order Details</h6>
+	<div class="row">
+		<div class="col-xs-6 col-md-2">
+			<ul type="none">
+				<li class="left">Customer Name</li>
+				<li class="left">Ordered Date:</li>
+				<li class="left">quantity:</li>
+				<li class="left">Total Price:</li>
+			</ul>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<ul class="right" type="none">
+				<li class="right">{{order.customer_name}}</li>
+				<li class="right">{{order.order_date}}</li>
+				<li class="right">{{order.no_items_ordered}}</li>
+				<li class="right">{{order.total_amount}}</li>
+			</ul>
+		</div>
+	</div>
+	<h6>Shipment Address</h6>
+	<div class="row" style="border-bottom: none">
+		<div class="col-xs-6 col-md-2">
+			<ul type="none">
+				<li class="left">H.No</li>
+				<li class="left">Flat Number</li>
+				<li class="left">Land Mark</li>
+				<li class="left">City</li>
+				<li class="left">Pincode</li>
+				<li class="left">State</li>
+				<li class="left">Country</li>
+			</ul>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<ul type="none">
+				<li class="right">{{order.address.house_num}}</li>
+				<li class="right">{{order.address.flat_num}}</li>
+				<li class="right">{{order.address.land_mark}}</li>
+				<li class="right">{{order.address.city}}</li>
+				<li class="right">{{order.address.pincode}}</li>
+				<li class="right">{{order.address.state}}</li>
+				<li class="right">{{order.address.country}}</li>
+			</ul>
+		</div>
+
+	</div>
+
+ 
+
+</div>

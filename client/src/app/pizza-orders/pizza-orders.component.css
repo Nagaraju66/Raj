@@ -1,0 +1,9 @@
+table thead{
+    background-color: #5bc0de;
+}
+table thead th{
+    color:#fff;
+}
+.status-change{
+  width: 200px;
+}

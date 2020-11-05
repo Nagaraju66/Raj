@@ -1,0 +1,39 @@
+<div class="table-responsive">
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Customer Name</th>
+			<th scope="col">Number of items ordered</th>
+			<th scope="col">Total amount of order</th>
+			<th class="status-change">Order status</th>
+			<th class="status-change">change status</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let order of pizzaOrders ; let i = index">
+			<th scope="row">{{i+1}}</th>
+			<td>{{order.customer_name}}</td>
+			<td>{{order.no_items_ordered}}</td>
+			<td>{{order.total_amount | currency: 'INR':true}}</td>
+			<td class="status-change">{{order.order_staus}}</td>
+			<td class="status-change">
+				<select
+          name=""
+          id=""
+          [value]="order.order_staus"
+          [(ngModel)]="order.order_staus"
+        >
+          <option>Order received</option>
+          <option>Preparing</option>
+          <option>Ready to serve</option>
+        </select>
+			</td>
+			<td>
+				<a [routerLink]="['/order-details', order.id]" class="btn btn-info btn-sm">Details</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
